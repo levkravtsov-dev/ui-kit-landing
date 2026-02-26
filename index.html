@@ -16,7 +16,7 @@
 					<nav class="nav">
 						<ul class="nav__menu">
 							<li class="nav__item">
-								<a href="#" class="nav__item-link nav__active">Home</a>
+								<a href="/" class="nav__item-link" aria-current="page">Home</a>
 							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__item-link">Articles</a>
@@ -29,7 +29,7 @@
 
 					<h1 class="header__title">The Roam Report</h1>
 					<div class="logo">
-						<img src="images/svg/train.svg" alt="Train | Main logo" />
+						<img src="images/svg/train.svg" alt="The Roam Report Logo" />
 					</div>
 					<p class="header__subtitle">
 						Stories and photos of long walks, wrong turns, and everyday
@@ -37,23 +37,18 @@
 					</p>
 				</div>
 
-				<ul class="current-location">
-					<li>Currently in</li>
-					<li><img src="images/svg/globe.svg" alt="globe icon" /></li>
-					<li>Dallol, Ethiopia</li>
-					<li><img src="images/svg/globe.svg" alt="globe icon" /></li>
-					<li>14.2417°N</li>
-					<li><img src="images/svg/globe.svg" alt="globe icon" /></li>
-					<li>40.3169°E</li>
-					<li><img src="images/svg/globe.svg" alt="globe icon" /></li>
-				</ul>
+				<p class="current-location">
+					Currently in
+					<span class="current-location__place">Dallol, Ethiopia</span>
+					<span class="current-location__coords">14.2417°N · 40.3169°E</span>
+				</p>
 			</div>
 		</header>
 
 		<main class="main">
 			<section class="hero">
 				<div class="container">
-					<div class="article hero__article">
+					<article class="article article--featured">
 						<div class="article__img">
 							<img src="images/white-camper.png" alt="white camper" />
 						</div>
@@ -61,16 +56,16 @@
 						<h2 class="article__title">
 							Wild Camping Along Tasmania’s East Coast
 						</h2>
-					</div>
-					<div class="hero_cta">
-						<a href="#">Scroll for more</a>
+					</article>
+					<div class="hero__cta">
+						<a href="#showcase">Scroll for more</a>
 						<img src="images/svg/arrow.svg" alt="down arrow" />
 					</div>
 				</div>
 			</section>
 
-			<section class="showcase">
-				<h3 class="title showcase__title">Latest travel stories</h3>
+			<section class="showcase" id="showcase">
+				<h2 class="title showcase__title">Latest travel stories</h2>
 				<div class="showcase__grid">
 					<article class="article showcase__article">
 						<div class="article__img">
@@ -80,18 +75,18 @@
 							/>
 						</div>
 						<p class="article__subtitle">October 10, 2025</p>
-						<h4 class="article__title">
+						<h3 class="article__title">
 							Finding Stillness in the Hills of San Cristóbal
-						</h4>
+						</h3>
 					</article>
 					<article class="article showcase__article">
 						<div class="article__img">
 							<img src="images/rome-latest.png" alt="photo from Rome" />
 						</div>
 						<p class="article__subtitle">October 2, 2025</p>
-						<h4 class="article__title">
+						<h3 class="article__title">
 							Wandering Through the Streets of Rome
-						</h4>
+						</h3>
 					</article>
 					<article class="article showcase__article">
 						<div class="article__img">
@@ -101,16 +96,16 @@
 							/>
 						</div>
 						<p class="article__subtitle">September 17, 2025</p>
-						<h4 class="article__title">Driving Across Monument Valley</h4>
+						<h3 class="article__title">Driving Across Monument Valley</h3>
 					</article>
 					<article class="article showcase__article">
 						<div class="article__img">
 							<img src="images/vietnam-latest.png" alt="photo from Vietnam" />
 						</div>
 						<p class="article__subtitle">September 2, 2025</p>
-						<h4 class="article__title">
+						<h3 class="article__title">
 							Walking the Terraces of Northern Vietnam
-						</h4>
+						</h3>
 					</article>
 				</div>
 
@@ -120,29 +115,29 @@
 			</section>
 
 			<section class="future">
-				<h3 class="title future__title">Upcoming itinerary</h3>
+				<h2 class="title future__title">Upcoming itinerary</h2>
 				<div class="future__cards">
 					<article class="future__item">
-						<div class="item__number">1</div>
-						<div class="item__info">
-							<h5 class="info-head">Oaxaca, Mexico</h5>
-							<p class="info-dates">March 12 - March 25</p>
-							<p class="info-descr">For mole, markets, and Monte Albán</p>
+						<div class="future__number">1</div>
+						<div class="future__info">
+							<h3 class="future__head">Oaxaca, Mexico</h3>
+							<p class="future__dates">March 12 - March 25</p>
+							<p class="future__descr">For mole, markets, and Monte Albán</p>
 						</div>
-						<div class="item__picture">
+						<div class="future__picture">
 							<img src="images/mexico-upcoming.png" alt="photo from Mexico" />
 						</div>
 					</article>
 					<article class="future__item">
-						<div class="item__number">2</div>
-						<div class="item__info">
-							<h5 class="info-head">Rome, Italy</h5>
-							<p class="info-dates">June 9 - June 30</p>
-							<p class="info-descr">
+						<div class="future__number">2</div>
+						<div class="future__info">
+							<h3 class="future__head">Rome, Italy</h3>
+							<p class="future__dates">June 9 - June 30</p>
+							<p class="future__descr">
 								Evening walks and neighborhood trattorias
 							</p>
 						</div>
-						<div class="item__picture">
+						<div class="future__picture">
 							<img
 								class="rounded"
 								src="images/rome-upcoming.png"
@@ -151,24 +146,28 @@
 						</div>
 					</article>
 					<article class="future__item">
-						<div class="item__number">3</div>
-						<div class="item__info">
-							<h5 class="info-head">Lofoten, Norway</h5>
-							<p class="info-dates">October 20 - October 28</p>
-							<p class="info-descr">Midnight sun, damp air, and drying cod</p>
+						<div class="future__number">3</div>
+						<div class="future__info">
+							<h3 class="future__head">Lofoten, Norway</h3>
+							<p class="future__dates">October 20 - October 28</p>
+							<p class="future__descr">
+								Midnight sun, damp air, and drying cod
+							</p>
 						</div>
-						<div class="item__picture">
+						<div class="future__picture">
 							<img src="images/norway-upcoming.png" alt="photo from Norway" />
 						</div>
 					</article>
 					<article class="future__item">
-						<div class="item__number">3</div>
-						<div class="item__info">
-							<h5 class="info-head">Kagoshima, Japan</h5>
-							<p class="info-dates">December 3 - December 21</p>
-							<p class="info-descr">Midnight sun, damp air, and drying cod</p>
+						<div class="future__number">4</div>
+						<div class="future__info">
+							<h3 class="future__head">Kagoshima, Japan</h3>
+							<p class="future__dates">December 3 - December 21</p>
+							<p class="future__descr">
+								Midnight sun, damp air, and drying cod
+							</p>
 						</div>
-						<div class="item__picture">
+						<div class="future__picture">
 							<img
 								class="rounded"
 								src="images/japan-upcoming.png"
@@ -188,7 +187,9 @@
 					<nav class="footer__nav">
 						<ul class="footer__menu">
 							<li class="footer__item">
-								<a class="footer__item-link active" href="#">Home</a>
+								<a class="footer__item-link" href="/" aria-current="page"
+									>Home</a
+								>
 							</li>
 							<li class="footer__item">
 								<a class="footer__item-link" href="#">Articles</a>
