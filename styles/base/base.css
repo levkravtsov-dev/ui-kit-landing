@@ -1,0 +1,5 @@
+header,
+section,
+footer {
+	padding: var(--space-sm);
+}

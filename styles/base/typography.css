@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Xanh+Mono:ital@0;1&display=swap');
+
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+h1,
+.footer__title {
+	font-family: 'Gasoek One', sans-serif;
+	font-size: 80px;
+}
+
+.future__number {
+	font-family: 'Xanh Mono', sans-serif;
+	font-size: 104px;
+	letter-spacing: -5px;
+}
